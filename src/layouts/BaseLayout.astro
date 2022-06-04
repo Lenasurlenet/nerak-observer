@@ -16,12 +16,12 @@ const { title } = Astro.props as Props;
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<title>{title}</title>
 </head>
-<body>
+<body class="flex flex-col h-screen justify-between">
   <Navbar/>
 	<main>
     <slot />
   </main>
-  <footer class="">
+  <footer class="customContainer">
       <small>Copyright © <span id="copyrightYear"></span>Nice Astro Starter</small>
     </footer>
 

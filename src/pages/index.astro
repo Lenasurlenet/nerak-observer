@@ -3,12 +3,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 ---
 <BaseLayout title="Nerak Observer">
+	<header class="pt-6">
+			<nav id="top-nav" class="customContainer flex flex-row justify-between">
+				<div id="logo">
+					<a href="/" class="font-serif">NeraK Observer</a>
+				</div>
+				<nav class="hidden md:flex spacex-12 items-end">
+					<a href="http://">Le Blog</a>
+				</nav>
+				<button id="mobile-menu" class="md:hidden">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+				</button>
+			</nav>
+		</header>
 	<main>
-		<section class="bg-black h-screen">
-  	<div class="customContainer text-white">
-    	<h1 class="display">nerak observer</h1>
-  	</div>
-	</section>
+		
 	</main>
 		
 </BaseLayout>

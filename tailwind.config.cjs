@@ -6,14 +6,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Josefin sans', 'sans-serif']
+      sans: ['Inter', 'sans-serif'],
+      serif:['Boska', 'serif']
     },
     colors: {
-      white: '#F1F1F1',
-      black: '#18191F',
+      white: '#fafbfc',
+      black: '#22222',
       gray: '#CBD5E1',
-      purple: '#A78BFA',
-      blue: '#22D3EE',
+      orange: '#FFC839',
+      green: '#4ECB71',
     },
     boxShadow: {
       sm: '0px 2px 4px 0x rgba(11, 10, 55, 0.15)',
@@ -29,7 +30,8 @@ module.exports = {
       '4xl': ['2.4rem', { lineheight: '56px', letterSpacing: '-0.032em' }],
       '5xl': ['3rem', { lineheight: '56px', letterSpacing: '-0.034em' }],
       '6xl': ['3.8rem', { lineheight: '72px', letterSpacing: '-0.034em' }],
-      '7xl': ['4.7rem', { lineheight: '88px', letterSpacing: '-0.036em' }]
+      '7xl': ['4.7rem', { lineheight: '88px', letterSpacing: '-0.036em' }],
+      '8xl': ['8rem', { lineheight: '8;136px', letterSpacing: '-0.036em' }]
     },
 
     extend: {
