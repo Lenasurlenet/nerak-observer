@@ -1,0 +1,43 @@
+---
+import menu from '../icons/menu.svg';
+import logo from '../icons/logo.svg';
+const navLinks = [
+  {
+    name: 'Home',
+  url:'/',
+  style:'transparent',
+  },
+  {
+    name: 'About',
+  url:'#',
+  style:'transparent',
+  }
+];
+---
+<div class="flex flex-wrap py-2 bg-blue">
+  <div class="w-full px-4">
+    <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-500 rounded">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
+          <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#pablo">
+            <img src="https://github.com/Lenasurlenet/nice-astro-starter/blob/master/src/assets/images/astro-logo.jpeg?raw=true" alt="Astro" class="h-12">
+          </a>
+          <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button">
+            <span class="block relative w-6 h-px rounded-sm bg-white"></span>
+            <span class="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
+            <span class="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
+          </button>
+        </div>
+        <div class="flex lg:flex-grow items-center" id="menu">
+          <ul class="nav-items hidden flex-col md:flex lg:flex-row list-none ml-auto" role="navigation">
+            {navLinks.map(link => (
+            <li role="none">
+              <a href={link.url} class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">{link.name}</a>
+            </li>))}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
