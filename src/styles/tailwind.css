@@ -121,6 +121,6 @@ select {
   }
 
   .customContainer {
-    @apply w-5/6 max-w-screen-2xl mx-auto px-6;
+    @apply max-w-screen-2xl mx-auto px-6;
   }
 }
