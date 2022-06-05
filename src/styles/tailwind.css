@@ -93,7 +93,7 @@ select {
   }
 
   section {
-    @apply w-full mx-auto py-6 text-center grid grid-cols-1 place-items-center;
+    @apply w-full mx-auto py-6;
   }
 
   h1 {

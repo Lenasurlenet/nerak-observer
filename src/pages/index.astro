@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
+import wild_west from '../assets/images/Wild_west.jpg';
+import logo from '../assets/icons/logo.svg'
 ---
 <BaseLayout title="Nerak Observer">
 	<header class="pt-6">
@@ -8,20 +9,46 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				<div id="logo">
 					<a href="/" class="font-serif">NeraK Observer</a>
 				</div>
-				<nav class="hidden md:flex spacex-12 items-end">
+				<nav class="hidden md:flex space-x-12 items-end">
 					<a href="http://">Le Blog</a>
 				</nav>
 				<button id="mobile-menu" class="md:hidden">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
 				</button>
 			</nav>
-		</header>
+	</header>
 	<main>
-		
+		<section id="hero" class="max-w-full h-screen max-h-[640px]">
+			<hero class="customContainer h-full w-full flex flex-wrap md:flex-nowrap">
+        
+				<nav id="sideNav" class="hidden md:flex flex-col justify-center space-y-6 text-black text-base h-full">
+					<a href="#" class="sideNav-Item">Exposition</a>
+					<a href="#" class="sideNav-Item">K.</a>
+					<a href="#" class="sideNav-Item">Gallerie</a>
+				</nav>
+				<div id="heroContent relative">
+					<img src={wild_west} alt="" class="absolute w-full h-full max-h-[640px] object-cover ">
+					<div class="titleBlock absolute text-left pl-20 mt-20 ch">
+						<h1 class="display text-7xl font-bold text-white font-serif leading-none">
+							NERAK <br> OBSERVER
+						</h1>
+				    <p class="underTitle text-white space-y-8 prose">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eaque maiores ipsum perspiciatis illum adipisci modi consequuntur placeat autem delectus?
+					</p>
+					</div>
+				</div>
+			</hero>
+		</section>
 	</main>
 		
 </BaseLayout>
 
 <style>
+
+	.sideNav-Item {
+		writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: right;
+ 	}
 	
 </style>
