@@ -54,9 +54,6 @@ picture {
 input,
 button,
 textarea,
-select {
-  font: inherit;
-}
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
@@ -90,13 +87,13 @@ select {
     min-height: 100%;
     background-color: #fafbfc;
   }
-
+  
   main {
-    @apply max-w-screen-2xl mx-auto py-6 md:py-8 lg:py-10 xl:py-12;
+    @apply max-w-screen-2xl mx-auto px-6;
   }
 
   section {
-    @apply w-full
+    @apply w-full py-16;
   }
 
   h1 {
@@ -104,11 +101,11 @@ select {
   }
 
   h2 {
-    @apply font-serif font-bold text-black pb-4 text-2xl md:text-3xl lg:text-4xl;
+    @apply font-serif font-bold text-black pb-4 text-2xl md:text-3xl xl:text-4xl;
   }
 
   h3 {
-    @apply font-sans italic font-semibold text-xl md:text-2xl text-black py-3;
+    @apply font-serif font-semibold text-xl md:text-2xl xl:text-3xl text-black py-4;
   }
 
   h4 {
@@ -124,6 +121,6 @@ select {
   }
 
   .customContainer {
-    @apply w-full mx-auto ;
+    @apply w-full mx-auto;
   }
 }
