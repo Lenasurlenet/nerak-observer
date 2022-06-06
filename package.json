@@ -11,7 +11,10 @@
   "devDependencies": {
     "@astrojs/sitemap": "^0.1.0",
     "@astrojs/tailwind": "^0.2.1",
-    "astro": "^1.0.0-beta.40"
+    "astro": "^1.0.0-beta.40",
+    "postcss": "^8.4.14",
+    "postcss-import": "^14.1.0",
+    "postcss-nesting": "^10.1.8"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.2",
