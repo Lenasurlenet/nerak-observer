@@ -1,11 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import wild_west from '../assets/images/Wild_west.jpg';
+import portrait_karen from '../assets/images/Portrait_karen.jpg';
+
 import logo from '../assets/icons/logo.svg'
 ---
 <BaseLayout title="Nerak Observer">
 	<header class="pt-6">
-			<nav id="top-nav" class="customContainer flex flex-row justify-between">
+			<nav id="top-nav" class="customContainer flex flex-row justify-between px-6">
 				<div id="logo">
 					<a href="/" class="font-serif">NeraK Observer</a>
 				</div>
@@ -39,14 +41,46 @@ import logo from '../assets/icons/logo.svg'
 				</div>
 			</hero>
 		</section>
-		<section id="blockquote" class="bg-gray flex flex-col justify-center">
-			<div class="customContainer  ">
-				<div class="max-w-[990px]  prose">
+		<section id="blockquote" class="bg-black px-6">
+			<div class="customContainer grid grid-cols-1 place-items-center">
+				<div class="max-w-[900px] prose">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--icomoon-free" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="#FFC839" d="M3.516 7a3.5 3.5 0 1 1-3.5 3.5L0 10a7 7 0 0 1 7-7v2a4.97 4.97 0 0 0-3.536 1.464a5.01 5.01 0 0 0-.497.578c.179-.028.362-.043.548-.043zm9 0a3.5 3.5 0 1 1-3.5 3.5L9 10a7 7 0 0 1 7-7v2a4.97 4.97 0 0 0-3.536 1.464a5.01 5.01 0 0 0-.497.578c.179-.028.362-.043.549-.043z"></path></svg>
         <blockquote class="w-full text-white">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore in omnis commodi saepe tempora impedit alias magnam officiis ratione quasi.</p>
 				</blockquote>
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--icomoon-free" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="#FFC839" d="M12.5 10A3.5 3.5 0 1 1 16 6.5l.016.5a7 7 0 0 1-7 7v-2a4.97 4.97 0 0 0 3.536-1.464a5.01 5.01 0 0 0 .497-.578a3.547 3.547 0 0 1-.549.043zm-9 0A3.5 3.5 0 1 1 7 6.5l.016.5a7 7 0 0 1-7 7v-2a4.97 4.97 0 0 0 3.536-1.464a5.01 5.01 0 0 0 .497-.578a3.547 3.547 0 0 1-.549.043z"></path></svg>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="py-0">
+			<div class="customContainer grid grid-cols-1 place-items-center lg:grid-cols-2">
+				<div class="img-wrapper w-full">
+					<img src={portrait_karen} alt="" class="max-h-96 w-full bg-cover">
+				</div>
+				<div class="aboutText p-6 w-full">
+					<h2>Things you should know about me</h2>
+					<div class="space-y-6">
+						<div class="traveller">
+						  <div class="text-block">
+							  <h3>I am a traveller</h3>
+						    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem nisi, provident ducimus expedita fuga blanditiis est. Architecto ad facilis soluta!</p>
+						  </div>
+						  <div class="traveller-links">
+							  <a href="#">Instagram</a>
+							  <a href="something"></a>
+						  </div>
+					  </div>
+					  <div class="writer">
+						  <div class="text-block">
+							  <h3>I am a writer</h3>
+						    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, neque laudantium omnis deserunt debitis corporis.</p>
+						    </div>
+						  <div class="weiter-links">
+							  <a href="#">FNAC</a>
+							  <a href="Les libraires"></a>
+						  </div>
+					  </div>
+					</div>
 				</div>
 			</div>
 		</section>
