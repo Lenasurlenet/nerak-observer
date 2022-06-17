@@ -85,7 +85,6 @@ textarea,
     padding: 0;
     min-width: 100%;
     min-height: 100%;
-    background-color: #fafbfc;
   }
   
   main {
@@ -121,6 +120,6 @@ textarea,
   }
 
   .customContainer {
-    @apply w-full mx-auto;
+    @apply w-full max-w-[1440px] mx-auto;
   }
 }

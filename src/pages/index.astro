@@ -19,17 +19,17 @@ import logo from '../assets/icons/logo.svg'
 				</button>
 			</nav>
 	</header>
-	<section id="hero" class="h-screen max-h-[640px]">
+	<section id="hero" class="h-screen max-h-[720px] pt-8">
 		<hero class="customContainer h-full w-full flex flex-wrap md:flex-nowrap">
         
-		<nav id="sideNav" class="hidden md:flex flex-col justify-center space-y-6 text-black text-base h-full">
+		<nav id="sideNav" class="hidden md:flex flex-col justify-center space-y-6 text-white text-base h-full">
 			<a href="#" class="sideNav-Item">Exposition</a>
 			<a href="#" class="sideNav-Item">K.</a>
 			<a href="#" class="sideNav-Item">Gallerie</a>
 		</nav>
 		<div id="heroContent" class="relative w-full flex-flex-col align-center">
-					<img src={wild_west} alt="" class="w-full h-full max-h-[640px] lg:max-h-[720px] object-cover object-right-bottom">
-					<div class="absolute inset-0 titleBlock text-left p-5 md:p-6 lg:p-8 md:w-4/5 lg:w-2/3">
+					<img src={wild_west} alt="" class="w-full h-full object-cover object-right-bottom">
+					<div class="absolute bottom-0 titleBlock text-left p-5 md:p-6 lg:p-8 md:w-4/5 lg:w-2/3 xl:w-1/2">
 						<h1 class="display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white font-serif leading-none">
 							NERAK <br> OBSERVER
 						</h1>
@@ -51,34 +51,32 @@ import logo from '../assets/icons/logo.svg'
 				</div>
 			</div>
 		</section>
-		<section id="about" class="py-0">
-			<div class="customContainer block lg:grid lg:grid-cols-2 lg:place-items-center">
-				<div class="img-wrapper w-full ">
-				 <img src={portrait_karen} alt="" class="max-h-96 w-full bg-cover">
-				</div>
-				<div class="aboutText p-6 w-full ">
-					<h2>Things you should know about me</h2>
-					<div class="space-y-6">
-						<div class="traveller">
-						  <div class="text-block">
-							  <h3>I am a traveller</h3>
-						    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem nisi, provident ducimus expedita fuga blanditiis est. Architecto ad facilis soluta!</p>
-						  </div>
-						  <div class="traveller-links">
-							  <a href="#">Instagram</a>
-							  <a href="something"></a>
-						  </div>
-					  </div>
-					  <div class="writer">
-						  <div class="text-block">
-							  <h3>I am a writer</h3>
-						    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, neque laudantium omnis deserunt debitis corporis.</p>
-						    </div>
-						  <div class="weiter-links">
-							  <a href="#">FNAC</a>
-							  <a href="Les libraires"></a>
-						  </div>
-					  </div>
+		<section id="about" class="py-0 bg-white text-black grid grid-cols-1 place-content-center lg:grid-cols-2 gap-5">
+			<img src={portrait_karen} alt="" class="h-full w-full object-cover inset-0">
+			<div class="aboutText p-6 w-full py-16">
+				<h2>Things you should know about me</h2>
+				<div class="space-y-6">
+					<div class="traveller">
+						<div class="text-block">
+							<h3>I am a traveller</h3>
+						  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem nisi, provident ducimus expedita fuga blanditiis est. Architecto ad facilis soluta!
+							</p>
+						</div>
+						<div class="traveller-links">
+							<a href="#">Instagram</a>
+							<a href="something"></a>
+						</div>
+					</div>
+					<div class="writer">
+						<div class="text-block">
+							<h3>I am a writer</h3>
+						  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, neque laudantium omnis deserunt debitis corporis.
+							</p>
+						</div>
+						<div class="weiter-links">
+							<a href="#">FNAC</a>
+							<a href="Les libraires"></a>
+						</div>
 					</div>
 				</div>
 			</div>
